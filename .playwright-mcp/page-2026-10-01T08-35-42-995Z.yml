@@ -1,0 +1,20 @@
+- generic [ref=f2e3]:
+  - navigation [ref=f2e4]:
+    - heading "AutomationApp" [level=1] [ref=f2e5]
+    - generic [ref=f2e6]: Dashboard
+    - link "API Testing" [ref=f2e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f2e20]:
+      - text: Model
+      - generic [ref=f2e21]: qwen2.5-coder:3b
+  - main [ref=f2e8]:
+    - generic [ref=f2e870]:
+      - link "API Testing" [ref=f2e871] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / Run history
+    - generic [ref=f2e872]:
+      - generic [ref=f2e873]:
+        - heading "Run history" [level=2] [ref=f2e874]
+        - paragraph [ref=f2e875]: Every saved run of this test, newest first.
+      - button "Back" [ref=f2e877] [cursor=pointer]
+    - paragraph [ref=f2e879]: This test has not been run yet.

@@ -1,0 +1,3 @@
+[    1456ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8000/api/modules/api-testing/groups/30:0
+[    1457ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8000/api/modules/api-testing/groups/30/tests:0
+[    1459ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8000/api/modules/api-testing/groups/30/variables:0

@@ -1,0 +1,70 @@
+- generic [ref=f2e3]:
+  - navigation [ref=f2e4]:
+    - heading "AutomationApp" [level=1] [ref=f2e5]
+    - generic [ref=f2e6]: Dashboard
+    - link "API Testing" [ref=f2e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f2e20]:
+      - text: Model
+      - generic [ref=f2e21]: qwen2.5-coder:3b
+  - main [ref=f2e8]:
+    - generic [ref=f2e255]:
+      - link "API Testing" [ref=f2e256] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / DummyJSON Auth Flow
+    - generic [ref=f2e257]:
+      - generic [ref=f2e258]:
+        - heading "DummyJSON Auth Flow" [level=2] [ref=f2e259]
+        - paragraph [ref=f2e260]: Login -> get token -> use token for authenticated endpoints · 2 tests
+      - generic [ref=f2e261]:
+        - button "Add API Test" [ref=f2e262] [cursor=pointer]
+        - button "Run group in order" [ref=f2e263] [cursor=pointer]
+    - generic [ref=f2e264]:
+      - heading "API tests" [level=3] [ref=f2e265]
+      - table [ref=f2e266]:
+        - rowgroup [ref=f2e267]:
+          - row [ref=f2e268]:
+            - columnheader "Order" [ref=f2e269]
+            - columnheader "Test" [ref=f2e270]
+            - columnheader "Request" [ref=f2e271]
+            - columnheader "Uses variables" [ref=f2e272]
+            - columnheader [ref=f2e273]
+        - rowgroup [ref=f2e274]:
+          - row [ref=f2e275]:
+            - cell "10" [ref=f2e276]
+            - cell [ref=f2e277]:
+              - strong [ref=f2e278]: Login
+            - cell "POST https://dummyjson.com/auth/login" [ref=f2e279]
+            - cell "—" [ref=f2e280]
+            - cell [ref=f2e281]:
+              - generic [ref=f2e282]:
+                - button "Open" [ref=f2e283] [cursor=pointer]
+                - button "History" [ref=f2e284] [cursor=pointer]
+                - button "Delete" [ref=f2e285] [cursor=pointer]
+          - row [ref=f2e286]:
+            - cell "20" [ref=f2e287]
+            - cell [ref=f2e288]:
+              - strong [ref=f2e289]: Get authenticated user
+            - cell "GET https://dummyjson.com/auth/me" [ref=f2e290]
+            - cell "—" [ref=f2e291]
+            - cell [ref=f2e292]:
+              - generic [ref=f2e293]:
+                - button "Open" [ref=f2e294] [cursor=pointer]
+                - button "History" [ref=f2e295] [cursor=pointer]
+                - button "Delete" [ref=f2e296] [cursor=pointer]
+    - generic [ref=f2e297]:
+      - heading "Values carried between tests" [level=3] [ref=f2e298]
+      - paragraph [ref=f2e299]:
+        - text: None yet. When a test's response yields something reusable (such as a token) it is stored here and substituted into later tests that write
+        - code [ref=f2e300]: "{{token}}"
+        - text: . You can also add a value yourself below.
+      - generic [ref=f2e301]:
+        - generic [ref=f2e302]:
+          - generic [ref=f2e303]: Add a value by hand
+          - textbox "Add a value by hand" [ref=f2e304]:
+            - /placeholder: name, e.g. token
+        - generic [ref=f2e305]:
+          - generic [ref=f2e306]: Value
+          - textbox "Value" [ref=f2e307]:
+            - /placeholder: value to substitute
+        - button "Add" [disabled] [ref=f2e308]

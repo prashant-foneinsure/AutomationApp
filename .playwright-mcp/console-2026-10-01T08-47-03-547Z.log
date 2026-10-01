@@ -1,0 +1,1 @@
+[  158267ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://127.0.0.1:8000/api/modules/api-testing/groups/36/run:0

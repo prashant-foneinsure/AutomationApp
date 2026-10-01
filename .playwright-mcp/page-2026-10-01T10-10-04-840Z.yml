@@ -1,0 +1,49 @@
+- generic [ref=f4e3]:
+  - navigation [ref=f4e4]:
+    - heading "AutomationApp" [level=1] [ref=f4e5]
+    - generic [ref=f4e6]: Dashboard
+    - link "API Testing" [ref=f4e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f4e59]:
+      - text: Model
+      - generic [ref=f4e60]: qwen2.5-coder:3b
+  - main [ref=f4e8]:
+    - generic [ref=f4e74]:
+      - link "API Testing" [ref=f4e75] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / DummyJSON Auth Flow
+    - generic [ref=f4e76]:
+      - generic [ref=f4e77]:
+        - heading "DummyJSON Auth Flow" [level=2] [ref=f4e78]
+        - paragraph [ref=f4e79]: No description · 0 tests
+      - generic [ref=f4e80]:
+        - button "Add API Test" [ref=f4e81] [cursor=pointer]
+        - button "Run group in order" [ref=f4e82] [cursor=pointer]
+    - generic [ref=f4e83]:
+      - heading "API tests" [level=3] [ref=f4e84]
+      - paragraph [ref=f4e85]:
+        - text: This group has no tests yet. Add the individual endpoints, e.g.
+        - emphasis [ref=f4e86]: Authentication
+        - text: for
+        - code [ref=f4e87]: /api/token
+        - text: and
+        - emphasis [ref=f4e88]: fetchEventList
+        - text: for
+        - code [ref=f4e89]: /api/event/fetch-upcoming-event-list
+        - text: .
+    - generic [ref=f4e90]:
+      - heading "Values carried between tests" [level=3] [ref=f4e91]
+      - paragraph [ref=f4e92]:
+        - text: None yet. When a test's response yields something reusable (such as a token) it is stored here and substituted into later tests that write
+        - code [ref=f4e93]: "{{token}}"
+        - text: . You can also add a value yourself below.
+      - generic [ref=f4e94]:
+        - generic [ref=f4e95]:
+          - generic [ref=f4e96]: Add a value by hand
+          - textbox "Add a value by hand" [ref=f4e97]:
+            - /placeholder: name, e.g. token
+        - generic [ref=f4e98]:
+          - generic [ref=f4e99]: Value
+          - textbox "Value" [ref=f4e100]:
+            - /placeholder: value to substitute
+        - button "Add" [disabled] [ref=f4e101]

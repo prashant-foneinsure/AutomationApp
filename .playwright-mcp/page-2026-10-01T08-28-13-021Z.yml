@@ -1,0 +1,92 @@
+- generic [ref=f2e3]:
+  - navigation [ref=f2e4]:
+    - heading "AutomationApp" [level=1] [ref=f2e5]
+    - generic [ref=f2e6]: Dashboard
+    - link "API Testing" [ref=f2e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f2e20]:
+      - text: Model
+      - generic [ref=f2e21]: qwen2.5-coder:3b
+  - main [ref=f2e8]:
+    - generic [ref=f2e470]:
+      - link "API Testing" [ref=f2e471] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / DummyJSON Auth Flow
+    - generic [ref=f2e472]:
+      - generic [ref=f2e473]:
+        - heading "DummyJSON Auth Flow" [level=2] [ref=f2e474]
+        - paragraph [ref=f2e475]: Login -> get token -> use token for authenticated endpoints · 4 tests
+      - generic [ref=f2e476]:
+        - button "Add API Test" [ref=f2e477] [cursor=pointer]
+        - button "Running…" [disabled] [ref=f2e546]
+    - generic [ref=f2e479]:
+      - heading "API tests" [level=3] [ref=f2e480]
+      - table [ref=f2e481]:
+        - rowgroup [ref=f2e482]:
+          - row [ref=f2e483]:
+            - columnheader "Order" [ref=f2e484]
+            - columnheader "Test" [ref=f2e485]
+            - columnheader "Request" [ref=f2e486]
+            - columnheader "Uses variables" [ref=f2e487]
+            - columnheader [ref=f2e488]
+        - rowgroup [ref=f2e489]:
+          - row [ref=f2e490]:
+            - cell "10" [ref=f2e491]
+            - cell [ref=f2e492]:
+              - strong [ref=f2e493]: Login
+            - cell "POST https://dummyjson.com/auth/login" [ref=f2e494]
+            - cell "—" [ref=f2e495]
+            - cell [ref=f2e496]:
+              - generic [ref=f2e497]:
+                - button "Open" [ref=f2e498] [cursor=pointer]
+                - button "History" [ref=f2e499] [cursor=pointer]
+                - button "Delete" [ref=f2e500] [cursor=pointer]
+          - row [ref=f2e501]:
+            - cell "20" [ref=f2e502]
+            - cell [ref=f2e503]:
+              - strong [ref=f2e504]: Get authenticated user
+            - cell "GET https://dummyjson.com/auth/me" [ref=f2e505]
+            - cell "—" [ref=f2e506]
+            - cell [ref=f2e507]:
+              - generic [ref=f2e508]:
+                - button "Open" [ref=f2e509] [cursor=pointer]
+                - button "History" [ref=f2e510] [cursor=pointer]
+                - button "Delete" [ref=f2e511] [cursor=pointer]
+          - row [ref=f2e512]:
+            - cell "30" [ref=f2e513]
+            - cell [ref=f2e514]:
+              - strong [ref=f2e515]: Get products
+            - cell "GET https://dummyjson.com/products?limit=10" [ref=f2e516]
+            - cell "—" [ref=f2e517]
+            - cell [ref=f2e518]:
+              - generic [ref=f2e519]:
+                - button "Open" [ref=f2e520] [cursor=pointer]
+                - button "History" [ref=f2e521] [cursor=pointer]
+                - button "Delete" [ref=f2e522] [cursor=pointer]
+          - row [ref=f2e523]:
+            - cell "40" [ref=f2e524]
+            - cell [ref=f2e525]:
+              - strong [ref=f2e526]: Add a product
+            - cell "POST https://dummyjson.com/products/add" [ref=f2e527]
+            - cell "—" [ref=f2e528]
+            - cell [ref=f2e529]:
+              - generic [ref=f2e530]:
+                - button "Open" [ref=f2e531] [cursor=pointer]
+                - button "History" [ref=f2e532] [cursor=pointer]
+                - button "Delete" [ref=f2e533] [cursor=pointer]
+    - generic [ref=f2e534]:
+      - heading "Values carried between tests" [level=3] [ref=f2e535]
+      - paragraph [ref=f2e536]:
+        - text: None yet. When a test's response yields something reusable (such as a token) it is stored here and substituted into later tests that write
+        - code [ref=f2e537]: "{{token}}"
+        - text: . You can also add a value yourself below.
+      - generic [ref=f2e538]:
+        - generic [ref=f2e539]:
+          - generic [ref=f2e540]: Add a value by hand
+          - textbox "Add a value by hand" [ref=f2e541]:
+            - /placeholder: name, e.g. token
+        - generic [ref=f2e542]:
+          - generic [ref=f2e543]: Value
+          - textbox "Value" [ref=f2e544]:
+            - /placeholder: value to substitute
+        - button "Add" [disabled] [ref=f2e545]

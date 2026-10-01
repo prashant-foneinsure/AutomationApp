@@ -1,0 +1,73 @@
+- generic [ref=f4e3]:
+  - navigation [ref=f4e4]:
+    - heading "AutomationApp" [level=1] [ref=f4e5]
+    - generic [ref=f4e6]: Dashboard
+    - link "API Testing" [ref=f4e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f4e59]:
+      - text: Model
+      - generic [ref=f4e60]: qwen2.5-coder:3b
+  - main [ref=f4e8]:
+    - generic [ref=f4e9]:
+      - generic [ref=f4e10]:
+        - heading "API Testing" [level=2] [ref=f4e11]
+        - paragraph [ref=f4e12]: Groups of interrelated API tests, and everything you have run so far.
+      - button "Add API Testing Group" [ref=f4e14] [cursor=pointer]
+    - generic [ref=f4e15]:
+      - heading "Test groups" [level=3] [ref=f4e16]
+      - table [ref=f4e17]:
+        - rowgroup [ref=f4e18]:
+          - row [ref=f4e19]:
+            - columnheader "Group" [ref=f4e20]
+            - columnheader "Description" [ref=f4e21]
+            - columnheader "Tests" [ref=f4e22]
+            - columnheader "Last run" [ref=f4e23]
+            - columnheader [ref=f4e24]
+        - rowgroup [ref=f4e25]:
+          - row [ref=f4e26]:
+            - cell [ref=f4e27]:
+              - strong [ref=f4e28]: Dummy JSON Test
+            - cell "—" [ref=f4e29]
+            - cell "1" [ref=f4e30]
+            - cell "10/1/2026, 3:37:43 PM" [ref=f4e31]
+            - cell [ref=f4e32]:
+              - generic [ref=f4e33]:
+                - button "Open" [ref=f4e34] [cursor=pointer]
+                - button "Rename" [ref=f4e35] [cursor=pointer]
+                - button "Delete" [ref=f4e36] [cursor=pointer]
+          - row [ref=f4e37]:
+            - cell [ref=f4e38]:
+              - strong [ref=f4e39]: Random Test
+            - cell "Use DummyJSON for this. It is specifically intended for API testing/prototyping and provides authentication, protected resources, GET/POST operations, tokens, query parameters, etc." [ref=f4e40]
+            - cell "1" [ref=f4e41]
+            - cell "10/1/2026, 1:17:47 PM" [ref=f4e42]
+            - cell [ref=f4e43]:
+              - generic [ref=f4e44]:
+                - button "Open" [ref=f4e45] [cursor=pointer]
+                - button "Rename" [ref=f4e46] [cursor=pointer]
+                - button "Delete" [ref=f4e47] [cursor=pointer]
+          - row [ref=f4e48]:
+            - cell [ref=f4e49]:
+              - strong [ref=f4e50]: Events Test
+            - cell "This is for Test" [ref=f4e51]
+            - cell "3" [ref=f4e52]
+            - cell "9/30/2026, 4:12:01 PM" [ref=f4e53]
+            - cell [ref=f4e54]:
+              - generic [ref=f4e55]:
+                - button "Open" [ref=f4e56] [cursor=pointer]
+                - button "Rename" [ref=f4e57] [cursor=pointer]
+                - button "Delete" [ref=f4e58] [cursor=pointer]
+    - generic [ref=f4e62]:
+      - heading "Add API Testing Group" [level=3] [ref=f4e63]
+      - generic [ref=f4e64]:
+        - generic [ref=f4e65]: Group name
+        - textbox "Group name Groups exist to hold API tests that belong together, e.g. all the calls for one feature area." [active] [ref=f4e66]:
+          - /placeholder: e.g. Event API testing
+        - generic [ref=f4e67]: Groups exist to hold API tests that belong together, e.g. all the calls for one feature area.
+      - generic [ref=f4e68]:
+        - generic [ref=f4e69]: Description (optional)
+        - textbox "Description (optional)" [ref=f4e70]:
+          - /placeholder: What this group covers
+      - generic [ref=f4e71]:
+        - button "Cancel" [ref=f4e72] [cursor=pointer]
+        - button "Save" [ref=f4e73] [cursor=pointer]

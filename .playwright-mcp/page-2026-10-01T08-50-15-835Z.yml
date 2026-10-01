@@ -1,0 +1,105 @@
+- generic [ref=f4e3]:
+  - navigation [ref=f4e4]:
+    - heading "AutomationApp" [level=1] [ref=f4e5]
+    - generic [ref=f4e6]: Dashboard
+    - link "API Testing" [ref=f4e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f4e20]:
+      - text: Model
+      - generic [ref=f4e21]: qwen2.5-coder:3b
+  - main [ref=f4e8]:
+    - generic [ref=f4e86]:
+      - link "API Testing" [ref=f4e87] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / DummyJSON Auth Flow
+    - generic [ref=f4e88]:
+      - generic [ref=f4e89]:
+        - heading "DummyJSON Auth Flow" [level=2] [ref=f4e90]
+        - paragraph [ref=f4e91]: Login -> get token -> use token for authenticated endpoints · 4 tests
+      - generic [ref=f4e92]:
+        - button "Add API Test" [ref=f4e93] [cursor=pointer]
+        - button "Run group in order" [ref=f4e178] [cursor=pointer]
+    - generic [ref=f4e179]: "The local model (Ollama) could not be reached or did not answer in time: Ollama error: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500. Check that Ollama is running and that the configured model has been pulled."
+    - generic [ref=f4e95]:
+      - heading "API tests" [level=3] [ref=f4e96]
+      - table [ref=f4e97]:
+        - rowgroup [ref=f4e98]:
+          - row [ref=f4e99]:
+            - columnheader "Order" [ref=f4e100]
+            - columnheader "Test" [ref=f4e101]
+            - columnheader "Request" [ref=f4e102]
+            - columnheader "Uses variables" [ref=f4e103]
+            - columnheader [ref=f4e104]
+        - rowgroup [ref=f4e105]:
+          - row [ref=f4e106]:
+            - cell "10" [ref=f4e107]
+            - cell [ref=f4e108]:
+              - strong [ref=f4e109]: Login
+            - cell "POST https://dummyjson.com/auth/login" [ref=f4e110]
+            - cell "—" [ref=f4e111]
+            - cell [ref=f4e112]:
+              - generic [ref=f4e113]:
+                - button "Open" [ref=f4e114] [cursor=pointer]
+                - button "History" [ref=f4e115] [cursor=pointer]
+                - button "Delete" [ref=f4e116] [cursor=pointer]
+          - row [ref=f4e117]:
+            - cell "20" [ref=f4e118]
+            - cell [ref=f4e119]:
+              - strong [ref=f4e120]: Get authenticated user
+            - cell "GET https://dummyjson.com/auth/me" [ref=f4e121]
+            - cell "—" [ref=f4e122]
+            - cell [ref=f4e123]:
+              - generic [ref=f4e124]:
+                - button "Open" [ref=f4e125] [cursor=pointer]
+                - button "History" [ref=f4e126] [cursor=pointer]
+                - button "Delete" [ref=f4e127] [cursor=pointer]
+          - row [ref=f4e128]:
+            - cell "30" [ref=f4e129]
+            - cell [ref=f4e130]:
+              - strong [ref=f4e131]: Get products
+            - cell "GET https://dummyjson.com/products?limit=10" [ref=f4e132]
+            - cell "—" [ref=f4e133]
+            - cell [ref=f4e134]:
+              - generic [ref=f4e135]:
+                - button "Open" [ref=f4e136] [cursor=pointer]
+                - button "History" [ref=f4e137] [cursor=pointer]
+                - button "Delete" [ref=f4e138] [cursor=pointer]
+          - row [ref=f4e139]:
+            - cell "40" [ref=f4e140]
+            - cell [ref=f4e141]:
+              - strong [ref=f4e142]: Add a product
+            - cell "POST https://dummyjson.com/products/add" [ref=f4e143]
+            - cell "—" [ref=f4e144]
+            - cell [ref=f4e145]:
+              - generic [ref=f4e146]:
+                - button "Open" [ref=f4e147] [cursor=pointer]
+                - button "History" [ref=f4e148] [cursor=pointer]
+                - button "Delete" [ref=f4e149] [cursor=pointer]
+    - generic [ref=f4e150]:
+      - heading "Values carried between tests" [level=3] [ref=f4e151]
+      - table [ref=f4e152]:
+        - rowgroup [ref=f4e153]:
+          - row [ref=f4e154]:
+            - columnheader "Name" [ref=f4e155]
+            - columnheader "Value" [ref=f4e156]
+            - columnheader "Captured by" [ref=f4e157]
+            - columnheader [ref=f4e158]
+        - rowgroup [ref=f4e159]:
+          - row [ref=f4e160]:
+            - cell [ref=f4e161]:
+              - code [ref=f4e162]: "{{id}}"
+            - cell [ref=f4e163]:
+              - textbox "1" [ref=f4e164]
+            - cell "test 45" [ref=f4e165]
+            - cell [ref=f4e166]:
+              - button "Delete" [ref=f4e168] [cursor=pointer]
+      - generic [ref=f4e169]:
+        - generic [ref=f4e170]:
+          - generic [ref=f4e171]: Add a value by hand
+          - textbox "Add a value by hand" [ref=f4e172]:
+            - /placeholder: name, e.g. token
+        - generic [ref=f4e173]:
+          - generic [ref=f4e174]: Value
+          - textbox "Value" [ref=f4e175]:
+            - /placeholder: value to substitute
+        - button "Add" [disabled] [ref=f4e176]

@@ -1,0 +1,8 @@
+- generic [ref=f7e3]:
+  - navigation [ref=f7e4]:
+    - heading "AutomationApp" [level=1] [ref=f7e5]
+    - generic [ref=f7e6]: Dashboard
+    - link "API Testing" [ref=f7e7] [cursor=pointer]:
+      - /url: /api-testing
+  - main [ref=f7e8]:
+    - generic [ref=f7e9]: Loading…

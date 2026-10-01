@@ -1,0 +1,63 @@
+- generic [ref=f10e3]:
+  - navigation [ref=f10e4]:
+    - heading "AutomationApp" [level=1] [ref=f10e5]
+    - generic [ref=f10e6]: Dashboard
+    - link "API Testing" [ref=f10e7] [cursor=pointer]:
+      - /url: /api-testing
+  - main [ref=f10e8]:
+    - generic [ref=f10e9]:
+      - link "API Testing" [ref=f10e10] [cursor=pointer]:
+        - /url: /api-testing
+      - text: /
+      - link "DummyJSON Auth Flow" [ref=f10e11] [cursor=pointer]:
+        - /url: /api-testing/groups/38
+      - text: / Edit
+    - generic [ref=f10e12]:
+      - generic [ref=f10e13]:
+        - heading "Edit API Test" [level=2] [ref=f10e14]
+        - paragraph [ref=f10e15]: Changes are saved with the Save test button.
+      - generic [ref=f10e16]:
+        - button "Back to group" [ref=f10e17] [cursor=pointer]
+        - button "History" [ref=f10e18] [cursor=pointer]
+    - generic [ref=f10e19]:
+      - generic [ref=f10e20]:
+        - generic [ref=f10e21]: "API Test Name:"
+        - 'textbox "API Test Name: For recognising this test. Must be unique within the group." [ref=f10e22]':
+          - /placeholder: e.g. Authentication, fetchEventList, createEvent
+        - generic [ref=f10e23]: For recognising this test. Must be unique within the group.
+      - generic [ref=f10e24]:
+        - generic [ref=f10e25]: Paste your cURL command
+        - textbox "Paste your cURL command" [ref=f10e26]:
+          - /placeholder: "curl -X POST 'https://example.com/api/token' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"user\":\"a\",\"pass\":\"b\"}'"
+      - generic [ref=f10e27]:
+        - generic [ref=f10e28]:
+          - generic [ref=f10e29]: What should be tested? (optional)
+          - textbox "What should be tested? (optional)" [ref=f10e30]:
+            - /placeholder: e.g. Test all positive and negative scenarios
+        - generic [ref=f10e31]:
+          - generic [ref=f10e32]: Method
+          - combobox "Method" [ref=f10e33]:
+            - option "Auto (from cURL)" [selected]
+            - option "GET"
+            - option "POST"
+            - option "PUT"
+            - option "PATCH"
+            - option "DELETE"
+      - generic [ref=f10e34]:
+        - heading "Authentication (for this run; save as variables to reuse)" [level=3] [ref=f10e35]
+        - generic [ref=f10e36]:
+          - generic [ref=f10e37]:
+            - generic [ref=f10e38]: Bearer token
+            - textbox "Bearer token" [ref=f10e39]
+          - generic [ref=f10e40]:
+            - generic [ref=f10e41]:
+              - generic [ref=f10e42]: Username
+              - textbox "Username" [ref=f10e43]
+            - generic [ref=f10e44]:
+              - generic [ref=f10e45]: Password
+              - textbox "Password" [ref=f10e46]
+      - generic [ref=f10e47]:
+        - button "Save test" [ref=f10e48] [cursor=pointer]
+        - button "Run test" [ref=f10e49] [cursor=pointer]
+        - button "Try without saving" [ref=f10e50] [cursor=pointer]
+        - button "Suggest value extractors" [ref=f10e51] [cursor=pointer]

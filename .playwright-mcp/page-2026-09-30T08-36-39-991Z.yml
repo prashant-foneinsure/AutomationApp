@@ -1,0 +1,102 @@
+- generic [ref=f4e3]:
+  - navigation [ref=f4e4]:
+    - heading "AutomationApp" [level=1] [ref=f4e5]
+    - generic [ref=f4e6]: Dashboard
+    - link "API Testing" [ref=f4e23] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f4e96]:
+      - text: Model
+      - generic [ref=f4e97]: qwen2.5-coder:3b
+  - main [ref=f4e8]:
+    - generic [ref=f4e9]:
+      - generic [ref=f4e10]:
+        - heading "API Testing" [level=2] [ref=f4e11]
+        - paragraph [ref=f4e12]: Groups of interrelated API tests, and everything you have run so far.
+      - button "Add API Testing Group" [ref=f4e14] [cursor=pointer]
+    - generic [ref=f4e15]:
+      - heading "Test groups" [level=3] [ref=f4e16]
+      - table [ref=f4e24]:
+        - rowgroup [ref=f4e25]:
+          - row [ref=f4e26]:
+            - columnheader "Group" [ref=f4e27]
+            - columnheader "Description" [ref=f4e28]
+            - columnheader "Tests" [ref=f4e29]
+            - columnheader "Last run" [ref=f4e30]
+            - columnheader [ref=f4e31]
+        - rowgroup [ref=f4e32]:
+          - row [ref=f4e33]:
+            - cell [ref=f4e34]:
+              - strong [ref=f4e35]: Smoke 1790754671
+            - cell "smoke" [ref=f4e36]
+            - cell "2" [ref=f4e37]
+            - cell "9/30/2026, 1:36:14 PM" [ref=f4e38]
+            - cell [ref=f4e39]:
+              - generic [ref=f4e40]:
+                - button "Open" [ref=f4e41] [cursor=pointer]
+                - button "Rename" [ref=f4e42] [cursor=pointer]
+                - button "Delete" [ref=f4e43] [cursor=pointer]
+          - row [ref=f4e44]:
+            - cell [ref=f4e45]:
+              - strong [ref=f4e46]: Smoke 1790754691
+            - cell "smoke" [ref=f4e47]
+            - cell "2" [ref=f4e48]
+            - cell "9/30/2026, 1:36:33 PM" [ref=f4e49]
+            - cell [ref=f4e50]:
+              - generic [ref=f4e51]:
+                - button "Open" [ref=f4e52] [cursor=pointer]
+                - button "Rename" [ref=f4e53] [cursor=pointer]
+                - button "Delete" [ref=f4e54] [cursor=pointer]
+    - generic [ref=f4e20]:
+      - heading "Testing done previously" [level=3] [ref=f4e21]
+      - table [ref=f4e55]:
+        - rowgroup [ref=f4e56]:
+          - row [ref=f4e57]:
+            - columnheader "When" [ref=f4e58]
+            - columnheader "Group" [ref=f4e59]
+            - columnheader "Test" [ref=f4e60]
+            - columnheader "Baseline" [ref=f4e61]
+            - columnheader "Cases" [ref=f4e62]
+            - columnheader "ms" [ref=f4e63]
+            - columnheader [ref=f4e64]
+        - rowgroup [ref=f4e65]:
+          - row [ref=f4e66]:
+            - cell "9/30/2026, 1:36:33 PM" [ref=f4e67]
+            - cell "Smoke 1790754691" [ref=f4e68]
+            - cell "fetchEventList" [ref=f4e69]
+            - cell "200" [ref=f4e70]
+            - cell "1/1" [ref=f4e71]
+            - cell "380" [ref=f4e73]
+            - cell [ref=f4e74]:
+              - button "Details" [ref=f4e75] [cursor=pointer]
+          - row [ref=f4e76]:
+            - cell "9/30/2026, 1:36:33 PM" [ref=f4e77]
+            - cell "Smoke 1790754691" [ref=f4e78]
+            - cell "Authentication" [ref=f4e79]
+            - cell "200" [ref=f4e80]
+            - cell "1/1" [ref=f4e81]
+            - cell "418" [ref=f4e83]
+            - cell [ref=f4e84]:
+              - button "Details" [ref=f4e85] [cursor=pointer]
+          - row [ref=f4e86]:
+            - cell "9/30/2026, 1:36:14 PM" [ref=f4e87]
+            - cell "Smoke 1790754671" [ref=f4e88]
+            - cell "Authentication" [ref=f4e89]
+            - cell "200" [ref=f4e90]
+            - cell "1/1" [ref=f4e91]
+            - cell "443" [ref=f4e93]
+            - cell [ref=f4e94]:
+              - button "Details" [ref=f4e95] [cursor=pointer]
+    - generic [ref=f4e99]:
+      - heading "Add API Testing Group" [level=3] [ref=f4e100]
+      - generic [ref=f4e101]:
+        - generic [ref=f4e102]: Group name
+        - textbox "Group name Groups exist to hold API tests that belong together, e.g. all the calls for one feature area." [active] [ref=f4e103]:
+          - /placeholder: e.g. Event API testing
+        - generic [ref=f4e104]: Groups exist to hold API tests that belong together, e.g. all the calls for one feature area.
+      - generic [ref=f4e105]:
+        - generic [ref=f4e106]: Description (optional)
+        - textbox "Description (optional)" [ref=f4e107]:
+          - /placeholder: What this group covers
+      - generic [ref=f4e108]:
+        - button "Cancel" [ref=f4e109] [cursor=pointer]
+        - button "Save" [ref=f4e110] [cursor=pointer]

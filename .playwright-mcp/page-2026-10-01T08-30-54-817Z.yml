@@ -1,0 +1,159 @@
+- generic [ref=f2e3]:
+  - navigation [ref=f2e4]:
+    - heading "AutomationApp" [level=1] [ref=f2e5]
+    - generic [ref=f2e6]: Dashboard
+    - link "API Testing" [ref=f2e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f2e20]:
+      - text: Model
+      - generic [ref=f2e21]: qwen2.5-coder:3b
+  - main [ref=f2e8]:
+    - generic [ref=f2e566]:
+      - link "API Testing" [ref=f2e567] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / Run history
+    - generic [ref=f2e568]:
+      - generic [ref=f2e569]:
+        - heading "Run history" [level=2] [ref=f2e570]
+        - paragraph [ref=f2e571]: Every saved run of this test, newest first.
+      - generic [ref=f2e572]:
+        - button "Back" [ref=f2e573] [cursor=pointer]
+        - button "Open test" [ref=f2e574] [cursor=pointer]
+    - table [ref=f2e576]:
+      - rowgroup [ref=f2e577]:
+        - row [ref=f2e578]:
+          - columnheader "Started" [ref=f2e579]
+          - columnheader "Baseline" [ref=f2e580]
+          - columnheader "Cases passed" [ref=f2e581]
+          - columnheader "ms" [ref=f2e582]
+          - columnheader "Outcome" [ref=f2e583]
+          - columnheader [ref=f2e584]
+      - rowgroup [ref=f2e585]:
+        - row [ref=f2e586] [cursor=pointer]:
+          - cell "10/1/2026, 2:14:44 PM" [ref=f2e587]
+          - cell "200" [ref=f2e588]
+          - cell "10/10" [ref=f2e589]
+          - cell "96093" [ref=f2e591]
+          - cell "completed" [ref=f2e592]
+          - cell [ref=f2e594]:
+            - button "View" [active] [ref=f2e595]
+    - generic [ref=f2e596]:
+      - heading "Run 33 · 10/1/2026, 2:14:44 PM" [level=3] [ref=f2e597]
+      - table [ref=f2e598]:
+        - rowgroup [ref=f2e599]:
+          - row [ref=f2e600]:
+            - columnheader "Test" [ref=f2e601]
+            - columnheader "Category" [ref=f2e602]
+            - columnheader "Expected" [ref=f2e603]
+            - columnheader "Actual" [ref=f2e604]
+            - columnheader "ms" [ref=f2e605]
+            - columnheader "Result" [ref=f2e606]
+            - columnheader [ref=f2e607]
+        - rowgroup [ref=f2e608]:
+          - row [ref=f2e609] [cursor=pointer]:
+            - cell "Baseline (valid request)" [ref=f2e610]
+            - cell "positive" [ref=f2e611]
+            - cell "200" [ref=f2e613]
+            - cell "200" [ref=f2e614]
+            - cell "2255" [ref=f2e615]
+            - cell "PASS" [ref=f2e616]
+            - cell [ref=f2e618]
+          - row [ref=f2e619] [cursor=pointer]:
+            - cell "Missing 'username' field" [ref=f2e620]
+            - cell "negative" [ref=f2e621]
+            - cell "400" [ref=f2e623]
+            - cell "400" [ref=f2e624]
+            - cell "1117" [ref=f2e625]
+            - cell "PASS" [ref=f2e626]
+            - cell [ref=f2e628]:
+              - generic [ref=f2e629]:
+                - button "✓" [ref=f2e630]
+                - button "✗" [ref=f2e631]
+          - row [ref=f2e632] [cursor=pointer]:
+            - cell "Missing 'password' field" [ref=f2e633]
+            - cell "negative" [ref=f2e634]
+            - cell "400" [ref=f2e636]
+            - cell "400" [ref=f2e637]
+            - cell "1118" [ref=f2e638]
+            - cell "PASS" [ref=f2e639]
+            - cell [ref=f2e641]:
+              - generic [ref=f2e642]:
+                - button "✓" [ref=f2e643]
+                - button "✗" [ref=f2e644]
+          - row [ref=f2e645] [cursor=pointer]:
+            - cell "Missing 'expiresInMins' field" [ref=f2e646]
+            - cell "negative" [ref=f2e647]
+            - cell "400" [ref=f2e649]
+            - cell "400" [ref=f2e650]
+            - cell "1071" [ref=f2e651]
+            - cell "PASS" [ref=f2e652]
+            - cell [ref=f2e654]:
+              - generic [ref=f2e655]:
+                - button "✓" [ref=f2e656]
+                - button "✗" [ref=f2e657]
+          - row [ref=f2e658] [cursor=pointer]:
+            - cell "Empty 'username' field" [ref=f2e659]
+            - cell "negative" [ref=f2e660]
+            - cell "400" [ref=f2e662]
+            - cell "400" [ref=f2e663]
+            - cell "1102" [ref=f2e664]
+            - cell "PASS" [ref=f2e665]
+            - cell [ref=f2e667]:
+              - generic [ref=f2e668]:
+                - button "✓" [ref=f2e669]
+                - button "✗" [ref=f2e670]
+          - row [ref=f2e671] [cursor=pointer]:
+            - cell "Empty 'password' field" [ref=f2e672]
+            - cell "negative" [ref=f2e673]
+            - cell "400" [ref=f2e675]
+            - cell "400" [ref=f2e676]
+            - cell "1107" [ref=f2e677]
+            - cell "PASS" [ref=f2e678]
+            - cell [ref=f2e680]:
+              - generic [ref=f2e681]:
+                - button "✓" [ref=f2e682]
+                - button "✗" [ref=f2e683]
+          - row [ref=f2e684] [cursor=pointer]:
+            - cell "Empty 'expiresInMins' field" [ref=f2e685]
+            - cell "negative" [ref=f2e686]
+            - cell "400" [ref=f2e688]
+            - cell "400" [ref=f2e689]
+            - cell "1073" [ref=f2e690]
+            - cell "PASS" [ref=f2e691]
+            - cell [ref=f2e693]:
+              - generic [ref=f2e694]:
+                - button "✓" [ref=f2e695]
+                - button "✗" [ref=f2e696]
+          - row [ref=f2e697] [cursor=pointer]:
+            - cell "Invalid 'username' field (not a string)" [ref=f2e698]
+            - cell "negative" [ref=f2e699]
+            - cell "400" [ref=f2e701]
+            - cell "400" [ref=f2e702]
+            - cell "1113" [ref=f2e703]
+            - cell "PASS" [ref=f2e704]
+            - cell [ref=f2e706]:
+              - generic [ref=f2e707]:
+                - button "✓" [ref=f2e708]
+                - button "✗" [ref=f2e709]
+          - row [ref=f2e710] [cursor=pointer]:
+            - cell "Invalid 'password' field (not a string)" [ref=f2e711]
+            - cell "negative" [ref=f2e712]
+            - cell "400" [ref=f2e714]
+            - cell "400" [ref=f2e715]
+            - cell "1070" [ref=f2e716]
+            - cell "PASS" [ref=f2e717]
+            - cell [ref=f2e719]:
+              - generic [ref=f2e720]:
+                - button "✓" [ref=f2e721]
+                - button "✗" [ref=f2e722]
+          - row [ref=f2e723] [cursor=pointer]:
+            - cell "Invalid 'expiresInMins' field (not a number)" [ref=f2e724]
+            - cell "negative" [ref=f2e725]
+            - cell "400" [ref=f2e727]
+            - cell "400" [ref=f2e728]
+            - cell "1118" [ref=f2e729]
+            - cell "PASS" [ref=f2e730]
+            - cell [ref=f2e732]:
+              - generic [ref=f2e733]:
+                - button "✓" [ref=f2e734]
+                - button "✗" [ref=f2e735]

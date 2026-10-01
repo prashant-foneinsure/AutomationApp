@@ -1,0 +1,61 @@
+- generic [ref=f4e3]:
+  - navigation [ref=f4e4]:
+    - heading "AutomationApp" [level=1] [ref=f4e5]
+    - generic [ref=f4e6]: Dashboard
+    - link "API Testing" [ref=f4e23] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f4e96]:
+      - text: Model
+      - generic [ref=f4e97]: qwen2.5-coder:3b
+  - main [ref=f4e8]:
+    - generic [ref=f4e111]:
+      - link "API Testing" [ref=f4e112] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / Event API testing
+    - generic [ref=f4e113]:
+      - generic [ref=f4e114]:
+        - heading "Event API testing" [level=2] [ref=f4e115]
+        - paragraph [ref=f4e116]: All the calls for the event feature area, browser verification run · 0 tests
+      - generic [ref=f4e117]:
+        - button "Add API Test" [ref=f4e118] [cursor=pointer]
+        - button "Run group in order" [ref=f4e119] [cursor=pointer]
+    - generic [ref=f4e120]:
+      - heading "API tests" [level=3] [ref=f4e121]
+      - paragraph [ref=f4e122]:
+        - text: This group has no tests yet. Add the individual endpoints, e.g.
+        - emphasis [ref=f4e123]: Authentication
+        - text: for
+        - code [ref=f4e124]: /api/token
+        - text: and
+        - emphasis [ref=f4e125]: fetchEventList
+        - text: for
+        - code [ref=f4e126]: /api/event/fetch-upcoming-event-list
+        - text: .
+    - generic [ref=f4e127]:
+      - heading "Values carried between tests" [level=3] [ref=f4e128]
+      - table [ref=f4e139]:
+        - rowgroup [ref=f4e140]:
+          - row [ref=f4e141]:
+            - columnheader "Name" [ref=f4e142]
+            - columnheader "Value" [ref=f4e143]
+            - columnheader "Captured by" [ref=f4e144]
+            - columnheader [ref=f4e145]
+        - rowgroup [ref=f4e146]:
+          - row [ref=f4e160]:
+            - cell [ref=f4e148]:
+              - code [ref=f4e149]: "{{hand_seeded}}"
+            - cell [ref=f4e157]:
+              - textbox "edited-in-browser" [ref=f4e161]
+            - cell "set by hand" [ref=f4e152]
+            - cell [ref=f4e162]:
+              - button "Delete" [ref=f4e155] [cursor=pointer]
+      - generic [ref=f4e131]:
+        - generic [ref=f4e132]:
+          - generic [ref=f4e133]: Add a value by hand
+          - textbox "Add a value by hand" [ref=f4e134]:
+            - /placeholder: name, e.g. token
+        - generic [ref=f4e135]:
+          - generic [ref=f4e136]: Value
+          - textbox "Value" [ref=f4e137]:
+            - /placeholder: value to substitute
+        - button "Add" [disabled] [ref=f4e138]

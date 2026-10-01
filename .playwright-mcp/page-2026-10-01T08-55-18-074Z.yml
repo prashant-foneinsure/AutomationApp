@@ -1,0 +1,104 @@
+- generic [ref=f5e3]:
+  - navigation [ref=f5e4]:
+    - heading "AutomationApp" [level=1] [ref=f5e5]
+    - generic [ref=f5e6]: Dashboard
+    - link "API Testing" [ref=f5e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f5e20]:
+      - text: Model
+      - generic [ref=f5e21]: qwen2.5-coder:3b
+  - main [ref=f5e8]:
+    - generic [ref=f5e390]:
+      - link "API Testing" [ref=f5e391] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / DummyJSON Auth Flow
+    - generic [ref=f5e392]:
+      - generic [ref=f5e393]:
+        - heading "DummyJSON Auth Flow" [level=2] [ref=f5e394]
+        - paragraph [ref=f5e395]: Login -> get token -> use token for authenticated endpoints · 4 tests
+      - generic [ref=f5e396]:
+        - button "Add API Test" [ref=f5e397] [cursor=pointer]
+        - button "Run group in order" [ref=f5e398] [cursor=pointer]
+    - generic [ref=f5e399]:
+      - heading "API tests" [level=3] [ref=f5e400]
+      - table [ref=f5e401]:
+        - rowgroup [ref=f5e402]:
+          - row [ref=f5e403]:
+            - columnheader "Order" [ref=f5e404]
+            - columnheader "Test" [ref=f5e405]
+            - columnheader "Request" [ref=f5e406]
+            - columnheader "Uses variables" [ref=f5e407]
+            - columnheader [ref=f5e408]
+        - rowgroup [ref=f5e409]:
+          - row [ref=f5e410]:
+            - cell "10" [ref=f5e411]
+            - cell [ref=f5e412]:
+              - strong [ref=f5e413]: Login
+            - cell "POST https://dummyjson.com/auth/login" [ref=f5e414]
+            - cell "—" [ref=f5e415]
+            - cell [ref=f5e416]:
+              - generic [ref=f5e417]:
+                - button "Open" [ref=f5e418] [cursor=pointer]
+                - button "History" [ref=f5e419] [cursor=pointer]
+                - button "Delete" [ref=f5e420] [cursor=pointer]
+          - row [ref=f5e421]:
+            - cell "20" [ref=f5e422]
+            - cell [ref=f5e423]:
+              - strong [ref=f5e424]: Get authenticated user
+            - cell "GET https://dummyjson.com/auth/me" [ref=f5e425]
+            - cell "—" [ref=f5e426]
+            - cell [ref=f5e427]:
+              - generic [ref=f5e428]:
+                - button "Open" [ref=f5e429] [cursor=pointer]
+                - button "History" [ref=f5e430] [cursor=pointer]
+                - button "Delete" [ref=f5e431] [cursor=pointer]
+          - row [ref=f5e432]:
+            - cell "30" [ref=f5e433]
+            - cell [ref=f5e434]:
+              - strong [ref=f5e435]: Get products
+            - cell "GET https://dummyjson.com/products?limit=10" [ref=f5e436]
+            - cell "—" [ref=f5e437]
+            - cell [ref=f5e438]:
+              - generic [ref=f5e439]:
+                - button "Open" [ref=f5e440] [cursor=pointer]
+                - button "History" [ref=f5e441] [cursor=pointer]
+                - button "Delete" [ref=f5e442] [cursor=pointer]
+          - row [ref=f5e443]:
+            - cell "40" [ref=f5e444]
+            - cell [ref=f5e445]:
+              - strong [ref=f5e446]: Add a product
+            - cell "POST https://dummyjson.com/products/add" [ref=f5e447]
+            - cell "—" [ref=f5e448]
+            - cell [ref=f5e449]:
+              - generic [ref=f5e450]:
+                - button "Open" [ref=f5e451] [cursor=pointer]
+                - button "History" [ref=f5e452] [cursor=pointer]
+                - button "Delete" [ref=f5e453] [cursor=pointer]
+    - generic [ref=f5e454]:
+      - heading "Values carried between tests" [level=3] [ref=f5e455]
+      - table [ref=f5e456]:
+        - rowgroup [ref=f5e457]:
+          - row [ref=f5e458]:
+            - columnheader "Name" [ref=f5e459]
+            - columnheader "Value" [ref=f5e460]
+            - columnheader "Captured by" [ref=f5e461]
+            - columnheader [ref=f5e462]
+        - rowgroup [ref=f5e463]:
+          - row [ref=f5e464]:
+            - cell [ref=f5e465]:
+              - code [ref=f5e466]: "{{id}}"
+            - cell [ref=f5e467]:
+              - textbox "1" [ref=f5e468]
+            - cell "test 45" [ref=f5e469]
+            - cell [ref=f5e470]:
+              - button "Delete" [ref=f5e472] [cursor=pointer]
+      - generic [ref=f5e473]:
+        - generic [ref=f5e474]:
+          - generic [ref=f5e475]: Add a value by hand
+          - textbox "Add a value by hand" [ref=f5e476]:
+            - /placeholder: name, e.g. token
+        - generic [ref=f5e477]:
+          - generic [ref=f5e478]: Value
+          - textbox "Value" [ref=f5e479]:
+            - /placeholder: value to substitute
+        - button "Add" [disabled] [ref=f5e480]

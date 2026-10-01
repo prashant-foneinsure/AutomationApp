@@ -1,0 +1,69 @@
+- generic [ref=f2e3]:
+  - navigation [ref=f2e4]:
+    - heading "AutomationApp" [level=1] [ref=f2e5]
+    - generic [ref=f2e6]: Dashboard
+    - link "API Testing" [ref=f2e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f2e20]:
+      - text: Model
+      - generic [ref=f2e21]: qwen2.5-coder:3b
+  - main [ref=f2e8]:
+    - generic [ref=f2e422]:
+      - link "API Testing" [ref=f2e423] [cursor=pointer]:
+        - /url: /api-testing
+      - text: /
+      - link "DummyJSON Auth Flow" [ref=f2e424] [cursor=pointer]:
+        - /url: /api-testing/groups/36
+      - text: / Add a product
+    - generic [ref=f2e425]:
+      - generic [ref=f2e426]:
+        - heading "Edit API Test" [level=2] [ref=f2e466]
+        - paragraph [ref=f2e428]: Changes are saved with the Save test button.
+      - generic [ref=f2e429]:
+        - button "Back to group" [ref=f2e430] [cursor=pointer]
+        - button "History" [ref=f2e467] [cursor=pointer]
+    - generic [ref=f2e468]: Test saved.
+    - generic [ref=f2e431]:
+      - generic [ref=f2e432]:
+        - generic [ref=f2e433]: "API Test Name:"
+        - 'textbox "API Test Name: For recognising this test. Must be unique within the group." [ref=f2e434]':
+          - /placeholder: e.g. Authentication, fetchEventList, createEvent
+          - text: Add a product
+        - generic [ref=f2e435]: For recognising this test. Must be unique within the group.
+      - generic [ref=f2e436]:
+        - generic [ref=f2e437]: Paste your cURL command
+        - textbox "Paste your cURL command" [ref=f2e438]:
+          - /placeholder: "curl -X POST 'https://example.com/api/token' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"user\":\"a\",\"pass\":\"b\"}'"
+          - text: "curl -X POST \"https://dummyjson.com/products/add\" -H \"Content-Type: application/json\" -H \"Accept: application/json\" -H \"Authorization: Bearer YOUR_ACCESS_TOKEN\" -d '{\"title\":\"QA Test Product\",\"price\":1500,\"stock\":100,\"category\":\"test\"}'"
+      - generic [ref=f2e439]:
+        - generic [ref=f2e440]:
+          - generic [ref=f2e441]: What should be tested? (optional)
+          - textbox "What should be tested? (optional)" [ref=f2e442]:
+            - /placeholder: e.g. Test all positive and negative scenarios
+        - generic [ref=f2e443]:
+          - generic [ref=f2e444]: Method
+          - combobox "Method" [ref=f2e445]:
+            - option "Auto (from cURL)" [selected]
+            - option "GET"
+            - option "POST"
+            - option "PUT"
+            - option "PATCH"
+            - option "DELETE"
+      - generic [ref=f2e446]:
+        - heading "Authentication (for this run only, never saved)" [level=3] [ref=f2e447]
+        - generic [ref=f2e448]:
+          - generic [ref=f2e449]:
+            - generic [ref=f2e450]: Bearer token
+            - textbox "Bearer token" [ref=f2e451]
+          - generic [ref=f2e452]:
+            - generic [ref=f2e453]:
+              - generic [ref=f2e454]: Username
+              - textbox "Username" [ref=f2e455]
+            - generic [ref=f2e456]:
+              - generic [ref=f2e457]: Password
+              - textbox "Password" [ref=f2e458]
+      - generic [ref=f2e459]:
+        - button "Save test" [ref=f2e460] [cursor=pointer]
+        - button "Run test" [ref=f2e461] [cursor=pointer]
+        - button "Try without saving" [ref=f2e462] [cursor=pointer]
+        - button "Suggest value extractors" [ref=f2e469] [cursor=pointer]

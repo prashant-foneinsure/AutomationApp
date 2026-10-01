@@ -1,0 +1,20 @@
+- generic [ref=f4e3]:
+  - navigation [ref=f4e4]:
+    - heading "AutomationApp" [level=1] [ref=f4e5]
+    - generic [ref=f4e6]: Dashboard
+    - link "API Testing" [ref=f4e7] [cursor=pointer]:
+      - /url: /api-testing
+  - main [ref=f4e8]:
+    - generic [ref=f4e9]:
+      - generic [ref=f4e10]:
+        - heading "API Testing" [level=2] [ref=f4e11]
+        - paragraph [ref=f4e12]: Groups of interrelated API tests, and everything you have run so far.
+      - button "Add API Testing Group" [ref=f4e14] [cursor=pointer]
+    - generic [ref=f4e15]:
+      - heading "Test groups" [level=3] [ref=f4e16]
+      - paragraph [ref=f4e17]:
+        - text: No groups yet. Use
+        - strong [ref=f4e18]: Add API Testing Group
+        - text: to start one, e.g.
+        - emphasis [ref=f4e19]: Event API testing
+        - text: ", then add the individual API tests inside it."

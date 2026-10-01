@@ -1,0 +1,156 @@
+- generic [ref=f5e3]:
+  - navigation [ref=f5e4]:
+    - heading "AutomationApp" [level=1] [ref=f5e5]
+    - generic [ref=f5e6]: Dashboard
+    - link "API Testing" [ref=f5e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f5e20]:
+      - text: Model
+      - generic [ref=f5e21]: qwen2.5-coder:3b
+  - main [ref=f5e8]:
+    - generic [ref=f5e180]:
+      - link "API Testing" [ref=f5e181] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / Run history
+    - generic [ref=f5e182]:
+      - generic [ref=f5e183]:
+        - heading "Run history" [level=2] [ref=f5e184]
+        - paragraph [ref=f5e185]: Every saved run of this test, newest first.
+      - generic [ref=f5e186]:
+        - button "Back" [ref=f5e187] [cursor=pointer]
+        - button "Open test" [ref=f5e188] [cursor=pointer]
+    - table [ref=f5e190]:
+      - rowgroup [ref=f5e191]:
+        - row [ref=f5e192]:
+          - columnheader "Started" [ref=f5e193]
+          - columnheader "Baseline" [ref=f5e194]
+          - columnheader "Cases passed" [ref=f5e195]
+          - columnheader "ms" [ref=f5e196]
+          - columnheader "Outcome" [ref=f5e197]
+          - columnheader [ref=f5e198]
+      - rowgroup [ref=f5e199]:
+        - row [ref=f5e200] [cursor=pointer]:
+          - cell "10/1/2026, 2:39:03 PM" [ref=f5e201]
+          - cell "200" [ref=f5e202]
+          - cell "9/9" [ref=f5e203]
+          - cell "77394" [ref=f5e205]
+          - cell "completed" [ref=f5e206]
+          - cell [ref=f5e208]:
+            - button "View" [active] [ref=f5e209]
+        - row [ref=f5e210]:
+          - cell "10/1/2026, 2:14:44 PM" [ref=f5e211]
+          - cell "200" [ref=f5e212]
+          - cell "10/10" [ref=f5e213]
+          - cell "96093" [ref=f5e215]
+          - cell "completed" [ref=f5e216]
+          - cell [ref=f5e218]:
+            - button "View" [ref=f5e219] [cursor=pointer]
+    - generic [ref=f5e220]:
+      - heading "Run 34 · 10/1/2026, 2:39:03 PM" [level=3] [ref=f5e221]
+      - table [ref=f5e222]:
+        - rowgroup [ref=f5e223]:
+          - row [ref=f5e224]:
+            - columnheader "Test" [ref=f5e225]
+            - columnheader "Category" [ref=f5e226]
+            - columnheader "Expected" [ref=f5e227]
+            - columnheader "Actual" [ref=f5e228]
+            - columnheader "ms" [ref=f5e229]
+            - columnheader "Result" [ref=f5e230]
+            - columnheader [ref=f5e231]
+        - rowgroup [ref=f5e232]:
+          - row [ref=f5e233] [cursor=pointer]:
+            - cell "Baseline (valid request)" [ref=f5e234]
+            - cell "positive" [ref=f5e235]
+            - cell "200" [ref=f5e237]
+            - cell "200" [ref=f5e238]
+            - cell "2550" [ref=f5e239]
+            - cell "PASS" [ref=f5e240]
+            - cell [ref=f5e242]
+          - row [ref=f5e243] [cursor=pointer]:
+            - cell "Missing 'username' field" [ref=f5e244]
+            - cell "negative" [ref=f5e245]
+            - cell "400" [ref=f5e247]
+            - cell "400" [ref=f5e248]
+            - cell "1195" [ref=f5e249]
+            - cell "PASS" [ref=f5e250]
+            - cell [ref=f5e252]:
+              - generic [ref=f5e253]:
+                - button "✓" [ref=f5e254]
+                - button "✗" [ref=f5e255]
+          - row [ref=f5e256] [cursor=pointer]:
+            - cell "Empty 'username' field" [ref=f5e257]
+            - cell "negative" [ref=f5e258]
+            - cell "400" [ref=f5e260]
+            - cell "400" [ref=f5e261]
+            - cell "1143" [ref=f5e262]
+            - cell "PASS" [ref=f5e263]
+            - cell [ref=f5e265]:
+              - generic [ref=f5e266]:
+                - button "✓" [ref=f5e267]
+                - button "✗" [ref=f5e268]
+          - row [ref=f5e269] [cursor=pointer]:
+            - cell "Wrong 'username' data type" [ref=f5e270]
+            - cell "negative" [ref=f5e271]
+            - cell "400" [ref=f5e273]
+            - cell "400" [ref=f5e274]
+            - cell "1142" [ref=f5e275]
+            - cell "PASS" [ref=f5e276]
+            - cell [ref=f5e278]:
+              - generic [ref=f5e279]:
+                - button "✓" [ref=f5e280]
+                - button "✗" [ref=f5e281]
+          - row [ref=f5e282] [cursor=pointer]:
+            - cell "Very long 'username' field" [ref=f5e283]
+            - cell "negative" [ref=f5e284]
+            - cell "400" [ref=f5e286]
+            - cell "400" [ref=f5e287]
+            - cell "1181" [ref=f5e288]
+            - cell "PASS" [ref=f5e289]
+            - cell [ref=f5e291]:
+              - generic [ref=f5e292]:
+                - button "✓" [ref=f5e293]
+                - button "✗" [ref=f5e294]
+          - row [ref=f5e295] [cursor=pointer]:
+            - cell "Special characters in 'username' field" [ref=f5e296]
+            - cell "negative" [ref=f5e297]
+            - cell "400" [ref=f5e299]
+            - cell "400" [ref=f5e300]
+            - cell "1209" [ref=f5e301]
+            - cell "PASS" [ref=f5e302]
+            - cell [ref=f5e304]:
+              - generic [ref=f5e305]:
+                - button "✓" [ref=f5e306]
+                - button "✗" [ref=f5e307]
+          - row [ref=f5e308] [cursor=pointer]:
+            - cell "Empty 'password' field" [ref=f5e309]
+            - cell "negative" [ref=f5e310]
+            - cell "400" [ref=f5e312]
+            - cell "400" [ref=f5e313]
+            - cell "1291" [ref=f5e314]
+            - cell "PASS" [ref=f5e315]
+            - cell [ref=f5e317]:
+              - generic [ref=f5e318]:
+                - button "✓" [ref=f5e319]
+                - button "✗" [ref=f5e320]
+          - row [ref=f5e321] [cursor=pointer]:
+            - cell "Wrong 'password' data type" [ref=f5e322]
+            - cell "negative" [ref=f5e323]
+            - cell "400" [ref=f5e325]
+            - cell "400" [ref=f5e326]
+            - cell "1172" [ref=f5e327]
+            - cell "PASS" [ref=f5e328]
+            - cell [ref=f5e330]:
+              - generic [ref=f5e331]:
+                - button "✓" [ref=f5e332]
+                - button "✗" [ref=f5e333]
+          - row [ref=f5e334] [cursor=pointer]:
+            - cell "Very long 'password' field" [ref=f5e335]
+            - cell "negative" [ref=f5e336]
+            - cell "400" [ref=f5e338]
+            - cell "400" [ref=f5e339]
+            - cell "1238" [ref=f5e340]
+            - cell "PASS" [ref=f5e341]
+            - cell [ref=f5e343]:
+              - generic [ref=f5e344]:
+                - button "✓" [ref=f5e345]
+                - button "✗" [ref=f5e346]

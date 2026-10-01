@@ -1,0 +1,47 @@
+- generic [ref=f5e3]:
+  - navigation [ref=f5e4]:
+    - heading "AutomationApp" [level=1] [ref=f5e5]
+    - generic [ref=f5e6]: Dashboard
+    - link "API Testing" [ref=f5e7] [cursor=pointer]:
+      - /url: /api-testing
+    - generic [ref=f5e20]:
+      - text: Model
+      - generic [ref=f5e21]: qwen2.5-coder:3b
+  - main [ref=f5e8]:
+    - generic [ref=f5e180]:
+      - link "API Testing" [ref=f5e181] [cursor=pointer]:
+        - /url: /api-testing
+      - text: / Run history
+    - generic [ref=f5e182]:
+      - generic [ref=f5e183]:
+        - heading "Run history" [level=2] [ref=f5e184]
+        - paragraph [ref=f5e185]: Every saved run of this test, newest first.
+      - generic [ref=f5e186]:
+        - button "Back" [active] [ref=f5e187] [cursor=pointer]
+        - button "Open test" [ref=f5e188] [cursor=pointer]
+    - table [ref=f5e190]:
+      - rowgroup [ref=f5e191]:
+        - row [ref=f5e192]:
+          - columnheader "Started" [ref=f5e193]
+          - columnheader "Baseline" [ref=f5e194]
+          - columnheader "Cases passed" [ref=f5e195]
+          - columnheader "ms" [ref=f5e196]
+          - columnheader "Outcome" [ref=f5e197]
+          - columnheader [ref=f5e198]
+      - rowgroup [ref=f5e199]:
+        - row [ref=f5e200]:
+          - cell "10/1/2026, 2:39:03 PM" [ref=f5e201]
+          - cell "200" [ref=f5e202]
+          - cell "9/9" [ref=f5e203]
+          - cell "77394" [ref=f5e205]
+          - cell "completed" [ref=f5e206]
+          - cell [ref=f5e208]:
+            - button "View" [ref=f5e209] [cursor=pointer]
+        - row [ref=f5e210]:
+          - cell "10/1/2026, 2:14:44 PM" [ref=f5e211]
+          - cell "200" [ref=f5e212]
+          - cell "10/10" [ref=f5e213]
+          - cell "96093" [ref=f5e215]
+          - cell "completed" [ref=f5e216]
+          - cell [ref=f5e218]:
+            - button "View" [ref=f5e219] [cursor=pointer]
